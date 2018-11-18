@@ -6,7 +6,7 @@ spring:
 #公共配置与profiles选择无关
 mybatis:
   typeAliasesPackage: com.yangtaibang.domain.yangtaibang.feed
-  mapperLocations: classpath:src/main/java/*.xml
+  mapperLocations: classpath:src/main/java/com/yangtaibang/domain/yangtaibang/feed/*.xml
 
 
 ---
