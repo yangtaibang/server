@@ -35,7 +35,7 @@ public class FeedController {
 
         feedService.publishFeed(unionID, content, pics);
 
-        return "Hello World";
+        return "published ok";
     }
 
     @RequestMapping("/delFeed")
