@@ -18,16 +18,18 @@ public class FeedController {
     FeedService feedService;
 
     @RequestMapping("/fetchFeedFollowed")
+    //TODO 获取最新的几条
     public List<FeedDetail> FetchFeedFollowed(String unionID) {
         List<FeedDetail> list = feedService.fetchFeedRecommend(unionID);
 
         return list;
     }
 
-    //TODO 返回数据库里面最新的feed
     @RequestMapping("/fetchFeedRecommend")
-    public String FetchFeedRecommend() {
-        return "Hello World";
+    public List<FeedDetail> FetchFeedRecommend(String unionID) {
+        List<FeedDetail> list = feedService.fetchFeedRecommend(unionID);
+
+        return list;
     }
 
     @RequestMapping("/publishFeed")
